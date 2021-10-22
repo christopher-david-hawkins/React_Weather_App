@@ -24,7 +24,7 @@ const Form = () => {
 
     let getData = () => {
             let location = locationName.value;
-            axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=1554de1c3f3604feb817d171fa465b04`)
+            axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${OPENWEATHERAPPAPIGOESHERE}`)
             .then((response) => {
                 setResponseData(response.data)
                 console.log(responseData.weather[0].id)
